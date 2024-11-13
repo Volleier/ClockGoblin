@@ -100,9 +100,14 @@ namespace UI.Servicers
             {
                 string input = await _uIServicer.ShowInputModalAsync("修改别名", "请输入别名", site.Alias, (val) =>
                 {
-                    if (val.Length > 15)
+                    if (string.IsNullOrEmpty(val))
                     {
-                        _main.Error("别名最大长度为15位字符");
+                        _main.Error("请输入别名");
+                        return false;
+                    }
+                    else if (val.Length > 10)
+                    {
+                        _main.Error("别名最大长度为10位字符");
                         return false;
                     }
                     return true;
@@ -110,7 +115,7 @@ namespace UI.Servicers
 
                 //  开始更新别名
 
-                data.Name = string.IsNullOrEmpty(input) ? site.Title : input;
+                data.Name = input;
                 site.Alias = input;
 
                 _webData.Update(site);
