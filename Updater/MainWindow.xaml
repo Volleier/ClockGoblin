@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Updater"
         mc:Ignorable="d"
-        Title="Tai 升级程序" ResizeMode="NoResize" Height="310" Width="435" WindowStartupLocation="CenterScreen">
+        Title="ClockGoblin 升级程序" ResizeMode="NoResize" Height="310" Width="435" WindowStartupLocation="CenterScreen">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>

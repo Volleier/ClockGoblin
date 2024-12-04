@@ -678,10 +678,10 @@ namespace Core.Servicers.Instances
                 mapper.Put(day, "每日");
                 mapper.Put(hours, "时段");
 
-                string name = $"Tai数据({start.ToString("yyyy年MM月")}-{end.ToString("yyyy年MM月")})";
+                string name = $"ClockGoblin数据({start.ToString("yyyy年MM月")}-{end.ToString("yyyy年MM月")})";
                 if (start.Year == end.Year && start.Month == end.Month)
                 {
-                    name = $"Tai数据({start.ToString("yyyy年MM月")})";
+                    name = $"ClockGoblin数据({start.ToString("yyyy年MM月")})";
                 }
                 mapper.Save(Path.Combine(dir, $"{name}.xlsx"));
 

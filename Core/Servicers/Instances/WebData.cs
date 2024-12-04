@@ -838,10 +838,10 @@ namespace Core.Servicers.Instances
                 var mapper = new Mapper();
                 mapper.Put(webSiteData, "浏览记录");
 
-                string name = $"Tai网页统计数据({start_.ToString("yyyy年MM月")}-{end_.ToString("yyyy年MM月")})";
+                string name = $"ClockGoblin网页统计数据({start_.ToString("yyyy年MM月")}-{end_.ToString("yyyy年MM月")})";
                 if (start_.Year == end_.Year && start_.Month == end_.Month)
                 {
-                    name = $"Tai网页统计数据({start_.ToString("yyyy年MM月")})";
+                    name = $"ClockGoblin网页统计数据({start_.ToString("yyyy年MM月")})";
                 }
                 mapper.Save(Path.Combine(dir_, $"{name}.xlsx"));
 

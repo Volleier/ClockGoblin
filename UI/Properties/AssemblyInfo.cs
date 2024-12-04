@@ -7,12 +7,12 @@ using System.Windows;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Tai")]
-[assembly: AssemblyDescription("Tai")]
+[assembly: AssemblyTitle("ClockGoblin")]
+[assembly: AssemblyDescription("ClockGoblin")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("noberumotto")]
-[assembly: AssemblyProduct("Tai")]
-[assembly: AssemblyCopyright("Copyright ©  2021 https://github.com/noberumotto")]
+[assembly: AssemblyCompany("NULL")]
+[assembly: AssemblyProduct("ClockGoblin")]
+[assembly: AssemblyCopyright("Copyright ©  2024 https://github.com/user")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

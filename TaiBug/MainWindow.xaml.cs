@@ -38,25 +38,27 @@ namespace TaiBug
         }
         private void IssuesHyperlinkClick(object sender, RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo("https://github.com/Planshit/Tai/issues/new"));
+            //https://github.com/Planshit/Tai/issues/new
+            Process.Start(new ProcessStartInfo(""));
         }
         private void EmailHyperlinkClick(object sender, RoutedEventArgs e)
         {
-            Clipboard.SetText("heis@thelittlepandaisbehind.com");
+            Clipboard.SetText("*邮箱地址*");
             MessageBox.Show("邮箱已复制");
         }
         private void Restart(object sender, RoutedEventArgs e)
         {
             string taiPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
-                "Tai.exe");
+                "ClockGoblin.exe");
             if (File.Exists(taiPath))
             {
                 Process.Start(taiPath);
             }
             else
             {
-                MessageBox.Show("Tai.exe 似乎已被删除", "重启失败提示", MessageBoxButton.OK, MessageBoxImage.Error);
-                Process.Start(new ProcessStartInfo("https://github.com/Planshit/Tai"));
+                MessageBox.Show("ClockGoblin.exe 似乎已被删除", "重启失败提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                //https://github.com/Planshit/Tai
+                Process.Start(new ProcessStartInfo(""));
             }
             Close();
         }

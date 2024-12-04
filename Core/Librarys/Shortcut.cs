@@ -43,7 +43,7 @@ namespace Core.Librarys
         {
             string path = Path.Combine(
                     Environment.GetFolderPath(Environment.SpecialFolder.Startup),
-                    "Tai.lnk");
+                    "ClockGoblin.lnk");
             if (startup)
             {
                 if (File.Exists(path))
@@ -70,7 +70,7 @@ namespace Core.Librarys
         {
             return CreateShortcut(Path.Combine(
                      Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
-                     "Tai.lnk"), "--selfStart");
+                     "ClockGoblin.lnk"), "--selfStart");
         }
     }
 }

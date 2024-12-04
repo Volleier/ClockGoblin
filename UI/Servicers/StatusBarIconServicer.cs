@@ -126,9 +126,9 @@ namespace UI.Servicers
             {
                 while (AppState.IsLoading)
                 {
-                    _statusBarIcon.Text = $"[{AppState.ProcessValue}%] Tai [{AppState.ActionText}]";
+                    _statusBarIcon.Text = $"[{AppState.ProcessValue}%] ClockGoblin [{AppState.ActionText}]";
                 }
-                _statusBarIcon.Text = "Tai!";
+                _statusBarIcon.Text = "ClockGoblin!";
                 SetIcon();
             });
         }

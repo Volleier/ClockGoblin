@@ -19,12 +19,12 @@ namespace Core.Librarys
         /// <returns></returns>
         public static bool SetStartup(bool startup = true)
         {
-            string TaskName = "Tai task";
+            string TaskName = "ClockGoblin task";
             var logonUser = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             string tai = Path.Combine(
                   AppDomain.CurrentDomain.BaseDirectory,
-                   "Tai.exe");
-            string taskDescription = "Tai开机自启服务";
+                   "ClockGoblin.exe");
+            string taskDescription = "ClockGoblin开机自启服务";
 
             using (var taskService = new TaskService())
             {

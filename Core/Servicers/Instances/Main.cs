@@ -39,7 +39,7 @@ namespace Core.Servicers.Instances
         private readonly IWebData _webData;
         //  忽略的进程
         private readonly string[] DefaultIgnoreProcess = new string[] {
-            "Tai",
+            "ClockGoblin",
             "SearchHost",
             "Taskmgr",
             "ApplicationFrameHost",
