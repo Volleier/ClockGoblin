@@ -1,10 +1,10 @@
-﻿<Application x:Class="TaiBug.App"
+﻿<Application x:Class="DeBug.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:TaiBug"
+             xmlns:local="clr-namespace:DeBug"
              StartupUri="MainWindow.xaml"
              Startup="OnStartup">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>

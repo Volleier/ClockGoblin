@@ -73,7 +73,7 @@ namespace Core.Servicers.Instances
                     }
 
                     //var db = _database.GetContext("AddUrlBrowseTime");
-                    //using (var db = new TaiDbContext())
+                    //using (var db = new CGDbContext())
                     using (var db = _database.GetWriterContext())
                     {
                         //  获取站点信息
@@ -202,7 +202,7 @@ namespace Core.Servicers.Instances
         /// </summary>
         /// <param name="url_">URL</param>
         /// <returns></returns>
-        private WebSiteModel GetCreateWebSite(TaiDbContext db, string url_)
+        private WebSiteModel GetCreateWebSite(CGDbContext db, string url_)
         {
             //  获取主域名
             string domain = UrlHelper.GetDomain(url_);
@@ -230,7 +230,7 @@ namespace Core.Servicers.Instances
         /// </summary>
         /// <param name="url_"></param>
         /// <returns></returns>
-        private Models.Db.WebUrlModel GetCreateUrl(TaiDbContext db, Site site_)
+        private Models.Db.WebUrlModel GetCreateUrl(CGDbContext db, Site site_)
         {
             lock (_createUrlLocker)
             {
@@ -402,7 +402,7 @@ namespace Core.Servicers.Instances
 
         //public List<WebSiteModel> GetWebSites(Expression<Func<WebSiteModel, bool>> predicate_)
         //{
-        //    using (var db = new TaiDbContext())
+        //    using (var db = new CGDbContext())
         //    {
         //        return db.WebSites.Where(predicate_).ToList();
         //    }

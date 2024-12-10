@@ -9,9 +9,9 @@ namespace Core.Servicers.Interfaces
 {
     public interface IDatabase
     {
-        TaiDbContext GetReaderContext();
+        CGDbContext GetReaderContext();
         //void CloseReader();
-        TaiDbContext GetWriterContext();
+        CGDbContext GetWriterContext();
         void CloseWriter();
     }
 }

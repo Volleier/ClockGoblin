@@ -14,7 +14,7 @@ namespace Core.Servicers.Instances
 {
     public class Database : IDatabase
     {
-        private TaiDbContext _writerContext;
+        private CGDbContext _writerContext;
         private readonly object _writeLocker = new object();
         private readonly object _readLocker = new object();
         private readonly object _closeLocker = new object();
@@ -22,7 +22,7 @@ namespace Core.Servicers.Instances
         private int _readerNum = 0;
         private bool _isWriting = false;
         private bool _isReading = false;
-        public TaiDbContext GetReaderContext()
+        public CGDbContext GetReaderContext()
         {
             lock (_readLocker)
             {
@@ -39,7 +39,7 @@ namespace Core.Servicers.Instances
                 }
                 _writerContext?.Dispose();
                 _readerNum++;
-                var db = new TaiDbContext();
+                var db = new CGDbContext();
                 db.Database.Connection.StateChange += Connection_StateChange;
                 return db;
             }
@@ -58,7 +58,7 @@ namespace Core.Servicers.Instances
         {
         }
 
-        public TaiDbContext GetWriterContext()
+        public CGDbContext GetWriterContext()
         {
             lock (_writeLocker)
             {
@@ -73,7 +73,7 @@ namespace Core.Servicers.Instances
                     }
                 }
                 _isWriting = true;
-                _writerContext = new TaiDbContext();
+                _writerContext = new CGDbContext();
                 return _writerContext;
             }
         }

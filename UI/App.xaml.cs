@@ -62,7 +62,7 @@ namespace UI
 
             //  显示崩溃弹窗
             string taiBugPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
-                "TaiBug.exe");
+                "DeBug.exe");
             ProcessHelper.Run(taiBugPath, new string[] { string.Empty });
 
             //  退出程序

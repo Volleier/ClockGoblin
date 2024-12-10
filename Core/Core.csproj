@@ -166,7 +166,7 @@
     <Compile Include="Librarys\Iconer.cs" />
     <Compile Include="Librarys\SQLite\SQLiteBuilder.cs" />
     <Compile Include="Librarys\SQLite\SQLiteConfiguration.cs" />
-    <Compile Include="Librarys\SQLite\TaiDbContext.cs" />
+    <Compile Include="Librarys\SQLite\CGDbContext.cs" />
     <Compile Include="Librarys\SystemCommon.cs" />
     <Compile Include="Librarys\Time.cs" />
     <Compile Include="Librarys\Win32API.cs" />

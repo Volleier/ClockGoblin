@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Core.Librarys.SQLite
 {
-    public class TaiDbContext : DbContext
+    public class CGDbContext : DbContext
     {
         /// <summary>
         /// 每日数据
@@ -45,7 +45,7 @@ namespace Core.Librarys.SQLite
         public DbSet<WebUrlModel> WebUrls { get; set; }
 
         private static string _dbFilePath = Path.Combine(FileHelper.GetRootDirectory(), "Data", "data.db");
-        public TaiDbContext()
+        public CGDbContext()
        : base(new SQLiteConnection()
        {
            ConnectionString = $"Data Source={_dbFilePath}",

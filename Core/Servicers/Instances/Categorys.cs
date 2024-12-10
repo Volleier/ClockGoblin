@@ -21,7 +21,7 @@ namespace Core.Servicers.Instances
      
         public CategoryModel Create(CategoryModel category)
         {
-            using (var db = new TaiDbContext())
+            using (var db = new CGDbContext())
             {
                 db.Categorys.Add(category);
                 db.SaveChanges();
@@ -32,7 +32,7 @@ namespace Core.Servicers.Instances
 
         public void Delete(CategoryModel category)
         {
-            using (var db = new TaiDbContext())
+            using (var db = new CGDbContext())
             {
                 var item = db.Categorys.Where(m => m.ID == category.ID).FirstOrDefault();
                 if (item != null)
@@ -58,7 +58,7 @@ namespace Core.Servicers.Instances
         public void Load()
         {
             Debug.WriteLine("加载分类");
-            using (var db = new TaiDbContext())
+            using (var db = new CGDbContext())
             {
                 this._categories = db.Categorys.ToList();
                 Debug.WriteLine("加载分类完成");
@@ -69,7 +69,7 @@ namespace Core.Servicers.Instances
 
         public void Update(CategoryModel category)
         {
-            using (var db = new TaiDbContext())
+            using (var db = new CGDbContext())
             {
                 db.Entry(category).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();

@@ -143,7 +143,7 @@ namespace Core.Servicers.Instances
                  CreateDirectory();
 
                  //  数据库自检
-                 using (var db = new TaiDbContext())
+                 using (var db = new CGDbContext())
                  {
                      db.SelfCheck();
                  }
