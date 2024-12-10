@@ -151,7 +151,7 @@ namespace UI.Servicers
                         iconName = "tai32";
                         break;
                 }
-                Stream iconStream = Application.GetResourceStream(new Uri($"pack://application:,,,/Tai;component/Resources/Icons/{iconName}.ico")).Stream;
+                Stream iconStream = Application.GetResourceStream(new Uri($"pack://application:,,,/ClockGoblin;component/Resources/Icons/{iconName}.ico")).Stream;
                 _statusBarIcon.Icon = new Icon(iconStream);
             }
             catch (Exception ex)

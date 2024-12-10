@@ -129,7 +129,7 @@ namespace Updater
             if (res)
             {
                 //  准备更新
-                var process = Process.GetProcessesByName("Tai");
+                var process = Process.GetProcessesByName("ClockGoblin");
                 if (process != null && process.Length > 0)
                 {
                     process[0].Kill();
@@ -148,13 +148,13 @@ namespace Updater
                 {
                     SetStatus("更新完成！", false);
                     Process tai = new Process();
-                    ProcessStartInfo startInfo = new ProcessStartInfo(System.IO.Path.Combine(unpath, "Tai.exe"));
+                    ProcessStartInfo startInfo = new ProcessStartInfo(System.IO.Path.Combine(unpath, "ClockGoblin.exe"));
                     tai.StartInfo = startInfo;
                     tai.Start();
                 }
                 else
                 {
-                    SetStatus("解压文件时发生异常，请重试！通常情况可能是因为Tai主程序尚未退出。", false);
+                    SetStatus("解压文件时发生异常，请重试！通常情况可能是因为ClockGoblin主程序尚未退出。", false);
                     UpdateBtn.Visibility = Visibility.Visible;
 
                 }

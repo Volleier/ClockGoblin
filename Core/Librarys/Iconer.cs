@@ -49,7 +49,7 @@ namespace Core.Librarys
                          "AppIcons", iconName);
             if (!File.Exists(iconPath))
             {
-                return "pack://application:,,,/Tai;component/Resources/Icons/defaultIcon.png";
+                return "pack://application:,,,/ClockGoblin;component/Resources/Icons/defaultIcon.png";
             }
 
             if (isRelativePath)

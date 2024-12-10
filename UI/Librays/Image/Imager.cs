@@ -15,7 +15,7 @@ namespace Core.Librarys.Image
 {
     public class Imager
     {
-        public static BitmapImage Load(string filePath, string defaultPath = "pack://application:,,,/Tai;component/Resources/Icons/defaultIcon.png")
+        public static BitmapImage Load(string filePath, string defaultPath = "pack://application:,,,/ClockGoblin;component/Resources/Icons/defaultIcon.png")
         {
             try
             {

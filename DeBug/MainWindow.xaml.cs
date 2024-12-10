@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TaiBug
+namespace ClockGoblinBug
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -38,7 +38,7 @@ namespace TaiBug
         }
         private void IssuesHyperlinkClick(object sender, RoutedEventArgs e)
         {
-            //https://github.com/Planshit/Tai/issues/new
+            //https://github.com/Planshit/ClockGoblin/issues/new
             Process.Start(new ProcessStartInfo(""));
         }
         private void EmailHyperlinkClick(object sender, RoutedEventArgs e)
@@ -57,7 +57,7 @@ namespace TaiBug
             else
             {
                 MessageBox.Show("ClockGoblin.exe 似乎已被删除", "重启失败提示", MessageBoxButton.OK, MessageBoxImage.Error);
-                //https://github.com/Planshit/Tai
+                //https://github.com/Planshit/ClockGoblin
                 Process.Start(new ProcessStartInfo(""));
             }
             Close();

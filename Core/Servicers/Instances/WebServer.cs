@@ -27,7 +27,7 @@ namespace Core.Servicers.Instances
             try
             {
                 _webSocket = new WebSocketServer(8908, false);
-                _webSocket.AddWebSocketService<WebServer>("/TaiWebSentry");
+                _webSocket.AddWebSocketService<WebServer>("/ClockGoblinWebSentry");
                 _webSocket.Start();
                 _isStart = true;
             }

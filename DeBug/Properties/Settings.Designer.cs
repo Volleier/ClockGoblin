@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TaiBug.Properties {
+namespace ClockGoblinBug.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
