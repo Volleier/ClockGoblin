@@ -252,6 +252,6 @@
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
   <PropertyGroup>
-    <PathMap>$(MSBuildProjectDirectory)=Tai</PathMap>
+    <PathMap>$(MSBuildProjectDirectory)=ClockGoblin</PathMap>
   </PropertyGroup>
 </Project>
